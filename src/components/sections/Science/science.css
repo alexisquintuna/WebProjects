@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.active {
+  fill: #ffffff;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+}
+
+.image {
+  background-image: url("https://images.unsplash.com/photo-1598897516650-e4dc73d8e417?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80");
+  background-position: center;
+}
+
+.boxes {
+  border: 2px solid black;
+  border-style: none solid none none;
+}
+
+.nav-bottom {
+  border: 2px solid black;
+  border-style: solid none none none;
+}
+
+.line-1 {
+  height: 10px;
+  background: white;
+  animation-name: startingAnimation;
+  animation-duration: 1.5s;
+  animation-direction: ease;
+}
+
+.line-2 {
+  height: 3px;
+  background: white;
+  animation-name: startingAnimation;
+  animation-duration: 1.5s;
+  animation-direction: ease;
+}
+
+.line-3 {
+  height: 1px;
+  background: white;
+  animation-name: startingAnimation;
+  animation-duration: 1.5s;
+  animation-direction: ease;
+}
+
+@keyframes startingAnimation {
+  0% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.center {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 6rem;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: -2px 0px 1px 2px #fff;
+}
+
+.second-moon {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 6rem;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.second-moon_shape {
+  transition: 400ms;
+  box-shadow: -2px 0px 1px 2px #fff;
+}
+
+.second-moon_hover {
+  transition: 400ms;
+  box-shadow: -3px 0px 1px 4px #fff;
+}
+
+.black-card_btn {
+  transition: 300ms;
+  background: black;
+  color: white;
+}
+
+.blackCardHover {
+  background: white;
+  color: black;
+  transition: 400ms;
+}
+
+.main-home:before {
+  content: "";
+  background: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+}
+
+.nav-hover:before {
+  content: "";
+  background: linear-gradient(to right, #000 50%, rgba(255, 255, 255, 0) 33%),
+    linear-gradient(to right, white 50%, white 50%);
+  display: block;
+  position: absolute;
+  background-size: 200% 100%;
+  background-position: 100%;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-hover:hover {
+  background-position: 0%;
+}
+
+.nav-hover:hover::before {
+  background-position: 0%;
+}
+
+.social__icon {
+  transition: 500ms;
+  border: 1px solid;
+  border-color: rgb(148 163 184);
+}
+
+.social__icon:hover {
+  background: black;
+  cursor: pointer;
+  border-color: transparent;
+}
+
+.social__icon:hover > svg {
+  fill: #fff;
+  transition: 400ms;
+}
+
+.active__icon {
+  background: black;
+}
+
+.beating-heart {
+  animation-name: beatingHeart;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes beatingHeart {
+  from {
+    transform: scale(0.75);
+    color: #d90429;
+  }
+  to {
+    transform: scale(1.25);
+    color: #ef233c;
+  }
+}
+
+@keyframes blackCardBtn {
+  from {
+    background: black;
+    color: white;
+  }
+  to {
+    background: white;
+    color: black;
+  }
+}
+
+.socials > a {
+  transition: 400ms;
+}
+
+.portfolio:hover {
+  color: #5a9c7a;
+}
+
+.linkedin:hover {
+  color: #2d64bc;
+}
+
+.codepen:hover {
+  color: gray;
+}
