@@ -1,0 +1,142 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+  
+  .hover-link{
+    background-image: linear-gradient(
+      #000,
+      #000 50%,
+      #fff 50%
+    );
+    background-size: 100% 300%;
+    background-position: 0 0%;
+    display: inline-block;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.75s ease-in-out;
+  }
+  
+  .hover-link:hover {
+    background-position: 0 250%;
+  }
+  
+  .solutions-block,
+  .getStarted-block{
+    transition: all 0.35s ease !important;
+  }
+  
+  .solutions-block:hover,
+  .getStarted-block:hover{
+    color: white;
+    fill:white;
+    border-color: white;
+    cursor: pointer;
+  }
+  
+  .card {
+    border-right: 1px solid black;
+    background: #fff;
+  }
+  .card-number {
+    font-weight: 200;
+    font-size: 25rem;
+    z-index: 1;
+  }
+  .bottom-text-card{
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .arrow-bg{
+    background-color: black;
+    transition: all 0.5s ease-in-out;
+  }
+  .arrow-right{
+    fill: white;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .card:hover .arrow-bg {
+    background-color: white;
+  }
+  .card:hover .arrow-right {
+    fill:black;
+  }
+  
+  .cardBackground1::after, 
+  .cardBackground2::after, 
+  .cardBackground3::after, 
+  .cardBackground4::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 150px 50px rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .cardBackground1 {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    background: url("https://blog.storemasta.com.au/hubfs/Blog%20images/All%20New%20blog.storemasta%20images/lab%20technician%20viewing%20sample%20under%20microscope.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .cardBackground2 {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    background: url("https://www.ssoe.com/wp-content/uploads/chemical_570x435.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .cardBackground3 {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    background: url("https://images.adsttc.com/media/images/5011/5893/28ba/0d70/4200/0349/large_jpg/stringio.jpg?1414345290");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .cardBackground4 {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    background: url("https://damassets.autodesk.net/content/dam/autodesk/www/solutions/3d-drawing/what-is-3d-drawingthumb1172x660.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .card:hover .cardBackground1,
+  .card:hover .cardBackground2,
+  .card:hover .cardBackground3,
+  .card:hover .cardBackground4,
+  .card:hover .cardBackground1::after,
+  .card:hover .cardBackground2::after,
+  .card:hover .cardBackground3::after,
+  .card:hover .cardBackground4::after{
+    opacity: 1;
+  }
+  
+  .card:hover .card-number,
+  .card:hover .bottom-text-card{
+    color: white;
+    border-color: white;
+  }
+  
+  
+  @media only screen and (max-width: 767px) {
+    .card {
+      border-bottom: 1px solid black;
+    }
+  }
+  
+  @media only screen and (max-width: 640px) {
+    .card {
+      border-bottom: 1px solid black;
+    }
+  }
+  
+  

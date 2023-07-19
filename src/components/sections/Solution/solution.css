@@ -1,0 +1,155 @@
+.transitions {
+  transition: all 0.25s ease-in-out;
+}
+
+.logo {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.small-number {
+  color: #fff;
+  font-size: 0.5rem;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: #000;
+  border: 3px solid #000;
+}
+
+.conference-card {
+  background-image: url("https://image1.masterfile.com/getImage/ODQ2LTAyNzk2MDgwZW4uMDAwMDAwMDA=AP7J8X/846-02796080en_Masterfile.jpg"),
+    linear-gradient(transparent 70%, black 30%);
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 100% 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.conference-card:hover {
+  transition: all 0.5s ease-in-out;
+  background-size: 115% 115%;
+}
+
+.line-1 {
+  background: black;
+  height: 2px;
+  width: 35px;
+}
+
+.line-2 {
+  background: black;
+  height: 2px;
+  width: 15px;
+}
+
+.card-headline {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.animation-circle {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+  backdrop-filter: blur(4.2px);
+  -webkit-backdrop-filter: blur(4.2px);
+  border: 1px solid rgba(255, 255, 255, 0);
+  transition: all 0.5s ease-in-out;
+}
+
+.purple-card:hover .animation-circle {
+  background: rgba(255, 255, 255, 0.21);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+}
+
+.card-title-hover:before {
+  content: "";
+  background: linear-gradient(to right, #fff 50%, transparent 33%),
+    linear-gradient(to right, transparent 50%, transparent 50%);
+  display: block;
+  position: absolute;
+  background-size: 200% 100%;
+  background-position: 100%;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transition: all 0.5s ease-in-out;
+}
+
+.hover-card:hover .card-title-hover {
+  background-position: 0%;
+}
+
+.hover-card:hover .card-title-hover:before {
+  background-position: 0%;
+}
+
+.nav-hover:before {
+  content: "";
+  background: linear-gradient(to right, #000 50%, rgba(255, 255, 255, 0) 33%),
+    linear-gradient(to right, white 50%, white 50%);
+  display: block;
+  position: absolute;
+  background-size: 200% 100%;
+  background-position: 100%;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-hover:hover {
+  background-position: 0%;
+}
+
+.nav-hover:hover::before {
+  background-position: 0%;
+}
+
+.card-title:before {
+  content: "";
+  background: linear-gradient(to right, #000 50%, rgba(255, 255, 255, 0) 33%),
+    linear-gradient(to right, white 50%, white 50%);
+  display: block;
+  position: absolute;
+  background-size: 200% 100%;
+  background-position: 100%;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transition: all 0.5s ease-in-out;
+}
+
+.hover-card-title {
+  background-position: 0%;
+}
+
+.hover-card-title:before {
+  background-position: 0%;
+}
+
+.black-card {
+  transition: transform 0.5s ease-in;
+}
+
+.black-card:hover .arrow-up {
+  transform: rotate(90deg);
+}
+
+.navbarContainer {
+  transition: all 3s ease-in;
+  /*   translate: 125% 0%; */
+}
+
+.navbarContainerClick {
+  translate: 0% 0%;
+}
